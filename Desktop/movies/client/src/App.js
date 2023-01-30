@@ -826,11 +826,12 @@ console.log('error', error)
 
   return (
     <div className="App">
-    <div className="querymv">
-    
+    <div className="querymv" >
+    <span className = "titleButton" onClick = {(e)=>window.location.reload()}>
     <span className="querymvspan">queryMV</span>
     
     <img className = "popcornIcon" src = {"./popcorn.svg"}/>
+    </span>
     </div>
     
     {total == 0 && 

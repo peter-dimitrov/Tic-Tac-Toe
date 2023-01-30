@@ -50,10 +50,11 @@ function Banner() {
       </div>
       <h1 className = "name">Peter Dimitrov</h1>
       <h2 className = "tit">Software Engineer | Front-End Developer</h2>
-      <div className = "bar">
+      {/* <div className = "bar"> */}
+      <div>
           <Navbar/> 
         </div>
-      <a href = "./Peter_R_Dimitrov_Resume-converted.pdf" className = "resumeButton" download>
+      <a href = "./PRD_Resume.pdf" className = "resumeButton" download>
         Download Resume (PDF)
       </a>
       {/* <div className = "icons">
@@ -71,7 +72,25 @@ function AboutMe() {
         <img className = "pic" src="./pete-jtree2.png"/>
         <h className = "abmeheader">About Me</h>
       </div>
-        <div className = "abmetext"> Hello and welcome to my website! My name is Peter and I am a React.JS developer. I created this website with the intentions of sharing my background, what I've been working on, and what I plan to do next!Hello and welcome to my website! My name is Peter and I am a React.JS developer. I created this website with the intentions of sharing my background, what I've been working on, and what I plan to do next! </div>
+        <div className = "abmetext"> Hello and welcome to my website! My name is Peter and I am a React.JS developer.
+        I created this website with the intentions of sharing my background, what I've been working on, and what I plan to do next.
+        I attended Pomona College and graduated in May 2020. While at Pomona, I took several computer science
+        classes and developed a strong interest in programming. After graduation, I continued to explore the field and began learning
+        React.JS in my free time. Soon after, I got a React Native internship at SeedStages, a startup that connects students with prospective employers.
+        Concurrently, I worked as a summer researcher alongside Professor Michael Izbicki on a Natural Language Processing project.
+        <br/><br/>
+        I have devoted much of my time lately working on Smart Shopping List, an idea first concieved by my former supervisor at SeedStages.
+        The idea is a shopping list that can predict when you will run out of an item, and will conveniently notify you ahead of time. I built the front-end
+        out entirely in React.JS, and leveraged Amazon Web Services for database storage, user authentication, a notification service, web hosting, etc. I can't
+        say how many times this list has saved me an extra trip to the grocery store because I forgot one of the essentials. Check it out in the projects section!
+        <br/><br/>
+        Programming is my passion, and what makes it special to me is that I can use my skills to improve day-to-day efficiency, automate the boring stuff,
+        and supplement my other hobbies. I am currently working on a website geared towards one of my favorite pasttimes: playing Jeopardy with friends and family.
+        I'm attempting to utilize online archives of questions and answers to make a convenient study tool for aspiring contestants, such as myself. I
+        will be releasing the tool for anybody that is interested, but be warned that I'm not going to take it easy on you when we've both made it on the show!
+        In the mean time, I am seeking employment as a front-end developer (preferably working in React.JS). If you or someone you know is interested in 
+        learning more about me or my experiences, you are welcome to send me an email at peter.r.dimitrov@gmail.com or give me a call at 309-259-9243.
+         </div>
     </div>
     )
 }
@@ -79,29 +98,32 @@ function AboutMe() {
 function ContactMe() {
   return (
     <div className = "come">
-        <h className = "comeHeader">Contact Me</h>
-          <h className = "so13text">
+        <div className = "comeHeader">Contact Me</div>
+        <div className = "allLinks">
+          <div className = "so13text">
         <a className = "so13link" href="https://www.linkedin.com/in/peterdimitrov/" target="_blank">
           <img className = "so13" src="./linkedInIcon.png"/>
-        peterdimitrov        </a></h>
-        <h className = "so31text">
+        peterdimitrov        </a></div>
+        <div className = "so31text">
         <a className = "so31link" href="https://github.com/peter-dimitrov/" target="_blank">
           <img className = "so31" src="./githublogo.png"/>
-        peter-dimitrov        </a></h>
-      <h className = "phone">
+        peter-dimitrov        </a></div>
+      <div className = "phone">
       <img className = "phoneIcon" src="./phoneIcon.png"/>
-      (309) 259-9243
-      </h>
-      <h className = "loc">
+      309-259-9243
+      </div>
+      <div className = "loc">
         <img className = "locIcon" src="./locationIcon.png"/>
         Los Angeles, CA
-      </h>
+      </div>
       <a className = "email" href="mailto:peter.r.dimitrov@gmail.com">
       <img className = "mailIcon" src="./mail.png"/>
       peter.r.dimitrov@gmail.com
       </a>
       <div>
       </div>
+      </div>
+
     </div>
   )
 }
@@ -109,11 +131,11 @@ function ContactMe() {
 function Navbar() {
   return (
     <div className = "nav">
-      <a className = "navLink" href="#abme">About Me </a>
+      <a className = "navLink1" href="#abme">About Me </a>
       <a className = "navLink" href="#exp">Experience </a>
       <a className = "navLink" href="#edu">Education </a>
-      <a className = "navLink" href="#proj">Projects </a>
       <a className = "navLink" href="#skills">Skills </a>
+      <a className = "navLink2" href="#proj">Projects </a>
     </div>
   );
 };
@@ -162,6 +184,30 @@ function Experiences(){
         </div>
 
 
+        <div className = "exp1mobile">
+        <h className = "comp">SeedStages, Los Angeles, CA</h>
+        <br/>
+        <h className = "title ">Full-Stack Software Engineering Intern</h>
+        <br/>
+        <h className = "title ">June 2020 - September 2020</h>
+        <br/>
+        <br/>
+        <div className = "bullet">
+        • Used React Native to develop new customer-facing features for a mobile app ahead of product launch
+        </div>
+        <div className = "bullet">
+        • Wrote Python scripts to import, export, manipulate, and back up data from Firebase database
+        </div>
+        <div className = "bullet">
+        • Conducted weekly usability testing, quality assurance, and debugging in React Native
+        </div>
+        <div className = "bullet">
+        • Collaborated with UX team to conceptualize and implement user interfaces
+        </div>
+        <div className = "bullet">
+        •	Managed version control and build deployments using Bitbucket
+        </div>
+        </div>
 
 
         <div className = "exp2">
@@ -180,6 +226,27 @@ function Experiences(){
         •	Collaborated with fellow researchers using Git to commit and push changes to Professor Michael Izbicki’s open-source repository
         </div>
         </div>
+
+        <div className = "exp2mobile">
+        <h className = "comp">Claremont McKenna College, Claremont, CA</h>
+        <br/>
+        <h className = "title ">Natural Language Processing Researcher</h>
+        <br/>
+        <h className = "title ">May 2020 - August 2020</h>
+        <br/>
+        <br/>
+        <div className = "bullet">
+        •	Used natural language algorithms to parse metadata from 750+ news articles on geopolitical events
+        </div>
+        <div className = "bullet">
+        • Developed Python test cases for 500+ hostnames to improve algorithm’s language capabilities
+        </div>
+        <div className = "bullet">
+        •	Collaborated with fellow researchers using Git to commit and push changes to Professor Michael Izbicki’s open-source repository
+        </div>
+        </div>
+
+
         <div className = "exp3">
         <h className = "comp">Arvato Financial Solutions, Seattle, WA</h>
         <br/>
@@ -196,6 +263,32 @@ function Experiences(){
         •	Conducted research and analyzed competitive landscapes in the financial services and tech industries to inform market entry strategy and provide recommendations for management
         </div>
         </div>
+
+        
+        <div className = "exp3mobile">
+        <h className = "comp">Arvato Financial Solutions, Seattle, WA</h>
+        <br/>
+        <h className = "title ">Product Management Intern</h>
+        <br/>
+        <h className = "title ">June 2019 - August 2019</h>
+        <br/>
+        <br/>
+        <div className = "bullet">
+        •	Collaborated with software and data teams to develop and launch a dashboard built in Power BI
+        </div>
+        <div className = "bullet">
+        •	Developed use cases for sales and marketing teams to demonstrate to potential customers         
+        </div>
+        <div className = "bullet">
+        •	Conducted research and analyzed competitive landscapes in the financial services and tech industries to inform market entry strategy and provide recommendations for management
+        </div>
+        </div>
+
+
+
+
+
+
       </div>
       </div>
   )
@@ -214,8 +307,8 @@ Bachelor of Arts in Economics
 •	Relevant Coursework: Data Structures & Algorithms (Python), Foundations of Data Science (R, SQL), Intro to Computer Science (Python), Linear Algebra (MATLAB), Econometrics (Stata), Statistics (Stata)
  */}
           <h className = "comp">Pomona College</h>
-          <div>Claremont, CA</div>
-          <div>Bachelor of Arts in Economics, Class of 2020</div>
+          <div className = "title">Claremont, CA</div>
+          <div className = "title">Bachelor of Arts in Economics, Class of 2020</div>
           <br/>
           <div className = "bullet">
           • GPA: 3.5/4.0
@@ -226,8 +319,8 @@ Bachelor of Arts in Economics
         </div>
         <div className = "edu2">
           <h className = "comp">West High School </h>
-          <div>Iowa City, IA</div>
-          <div>Class of 2016</div>
+          <div className = "title">Iowa City, IA</div>
+          <div className = "title">Class of 2016</div>
           <br/>
           <div className = "bullet">
           • GPA: 3.84/4.00
@@ -248,8 +341,22 @@ function Projects() {
   return(
     <div id = "proj" className = "proj">
       <h className = "projheader">Projects</h>
-      <a className = "navLink" href="#jerseySlice">Projects </a>
+
+      <div className = "ProjContainerDiv">
+
+      <a className = "projLink" href = "https://www.smartshoplist.com">
+      <img className = "smartShoppingListImageLink" src = "./SmartShoppingList.png"></img> 
+      </a>
+
+      <a className = "projLink" href = "https://www.metguesser.com">
+      <img className = "smartShoppingListImageLink" src = "./metGuesser.png"></img> 
+      </a>
+
+
+      </div>
+      
     </div>
+      
   )
 }
 
@@ -257,6 +364,7 @@ function Skills() {
   return(
     <div id = "skills" className = "skills">
       <h className = "skillheader">Skills</h>
+      <div className = "allSkills">
         <div className = "skill"> React.JS </div>
         <div className = "skill"> React Native </div>
         <div className = "skill"> JavaScript </div>
@@ -270,6 +378,7 @@ function Skills() {
         <div className = "skill"> Unix/Linux </div>
         <div className = "skill"> SQL </div>
         <div className = "skill"> R </div>
+      </div>
         {/* <div className = "skill"> MATLAB </div> */}
     </div>
   )

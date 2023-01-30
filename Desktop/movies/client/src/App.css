@@ -182,10 +182,12 @@ html{
   /* background-color: transparent; */
   /* border: none; */
   /* padding: 10px; */
+  transition: .2s ease-out; 
 }
 
 .loadButton:hover{
   cursor: pointer;
+  background-color: rgb(10, 156, 241, .8);
 }
 
 .clearButton{
@@ -211,13 +213,23 @@ html{
   /* border: none; */
   /* border: 1px solid rgb(153, 152, 152); */
   border: 1px solid rgb(191, 191, 191);
-
-
   display: inline-block;
   /* padding: 10px; */
+  transition: .2s ease-out; 
 }
 
 .clearButton:hover{
+  cursor: pointer;
+  background-color: rgb(0,0,0, .075);
+}
+
+.titleButton{
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.titleButton:hover{
   cursor: pointer;
 }
 
@@ -989,6 +1001,7 @@ input:checked + label .grow {
   letter-spacing: 1.5px;
   display: flex;
   justify-content: left;
+  font-size: 16px;
   /* text-align: left; */
   /* display: inline-block; */
 }
